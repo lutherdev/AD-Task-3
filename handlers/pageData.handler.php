@@ -13,7 +13,8 @@ $navList = [
 ];
 
 $arrayStuds = ["Luther sambeli", "Ford Dean", "dean man", "lelouch britania"];
-
+$prizes = ["Tulfone", "Amonguse", "Roborux"];
+$studs = ['Lelouch' => '95', 'Ayanokoji' => '99','Zenitsu' => '84', 'Light' => '93', 'Shikamaru' => '95'];
 $boxData = [
     //TUTORIAL PAGE
     [
@@ -67,16 +68,24 @@ $boxData = [
     ],
     //TUTORIAL PAGE 3
     [
-        "title" => "String Functions",
+        "title" => "String Function",
         "description" => 'A built in function for tampering with your strings',
-        "scenario" => "Capitalize the name of TOP STUDENT!",
-        "snippet" => "strtoupper(\$topStud)",
+        "scenario" => "Scenario: Capitalize the name of TOP STUDENT! (using strtoupper)",
+        "snippet" => '$highGrade = max($studs);<br>
+                        foreach ($studs as $name => $grade){<br>
+                            if ($highGrade == $grade){<br>
+                            &nbsp&nbsp&nbsp $topStud = strtoupper($name);<br>
+                            &nbsp&nbsp&nbsp break; <br>
+                            &nbsp&nbsp&nbsp}<br>
+                            
+                        }<br>
+                        echo "the name: " . $topStud',
         "funcName" => "showOutputBox0",
     ],
     [
         "title" => "Mathematical Function",
         "description" => 'A built in function for tampering with your numbers',
-        "scenario" => "Get the highest grade out of all students",
+        "scenario" => "Scenario: Get the highest grade out of all students (using max)",
         "snippet" => '$highGrade = max($studs);<br>
                         foreach ($studs as $name => $grade){<br>
                             if ($highGrade == $grade){<br>
@@ -86,16 +95,13 @@ $boxData = [
         "funcName" => "showOutputBox1",
     ],
     [
-        "title" => "Mathematical Function",
+        "title" => "Date Manipulation",
         "description" => 'A built in function for tampering with your numbers',
-        "scenario" => "Get the highest grade out of all students",
-        "snippet" => '$highGrade = max($studs);<br>
-                        foreach ($studs as $name => $grade){<br>
-                            if ($highGrade == $grade){<br>
-                            &nbsp&nbsp&nbspecho "$name has the highest grade of $grade"<br>
-                            &nbsp&nbsp&nbsp}<br>
-                        }',
-        "funcName" => "showOutputBox1",
+        "scenario" => "Scenario: Get the latest date and time for when the student won the prize",
+        "snippet" => '$prize = getRandId(0,3);<br>
+                    echo "You won {$prizes[$prize]};"
+                    echo date("F j, Y g:i A");',
+        "funcName" => "showOutputBox2",
     ],
 ]
 
