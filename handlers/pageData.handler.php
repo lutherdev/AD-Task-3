@@ -67,11 +67,35 @@ $boxData = [
     ],
     //TUTORIAL PAGE 3
     [
-        "title" => "String Manipulation",
+        "title" => "String Functions",
         "description" => 'A built in function for tampering with your strings',
-        "scenario" => "Capitalize the name of the winner!",
-        "snippet" => "strtoupper(\$winner)",
+        "scenario" => "Capitalize the name of TOP STUDENT!",
+        "snippet" => "strtoupper(\$topStud)",
         "funcName" => "showOutputBox0",
+    ],
+    [
+        "title" => "Mathematical Function",
+        "description" => 'A built in function for tampering with your numbers',
+        "scenario" => "Get the highest grade out of all students",
+        "snippet" => '$highGrade = max($studs);<br>
+                        foreach ($studs as $name => $grade){<br>
+                            if ($highGrade == $grade){<br>
+                            &nbsp&nbsp&nbspecho "$name has the highest grade of $grade"<br>
+                            &nbsp&nbsp&nbsp}<br>
+                        }',
+        "funcName" => "showOutputBox1",
+    ],
+    [
+        "title" => "Mathematical Function",
+        "description" => 'A built in function for tampering with your numbers',
+        "scenario" => "Get the highest grade out of all students",
+        "snippet" => '$highGrade = max($studs);<br>
+                        foreach ($studs as $name => $grade){<br>
+                            if ($highGrade == $grade){<br>
+                            &nbsp&nbsp&nbspecho "$name has the highest grade of $grade"<br>
+                            &nbsp&nbsp&nbsp}<br>
+                        }',
+        "funcName" => "showOutputBox1",
     ],
 ]
 
