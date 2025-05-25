@@ -1,22 +1,23 @@
 <?php
 require_once __DIR__ . '/../../utils/capitalizeFLetter.utils.php';
+require_once __DIR__ . '/../../utils/getRandId.utils.php';
 require_once __DIR__ . '/../../handlers/pageData.handler.php';
 require_once __DIR__ . '/../../components/head.component.php';
 require_once __DIR__ . '/../../components/nav.component.php';
 ?>
 
 <?php
-head("LEVEL 2", "tutorial2");
+head("LEVEL 3", "tutorial3");
 navHeader($navList);
 ?>
         <div id="main">
             <div class="box">
                 <div id="hero-text">
                     <h1>PREDEFINED FUNCTIONS!</h1>
-                    <p>"PREDEFINED" meaning the built in functions of PHP, and here some category to use it on</p>
-                    <p>String Manipulation, Number Manipulation, and Date Manipulation</p>
-                    <p>Scenario: An array with names with their final grade, and has to determine the highest grade for them to win a random item!</p>
-                    <p>$studs = ['Lelouch' => '95', 'Ayanokoji' => '99', 'Zenitsu' => '84', 'Light' => '93', 'Shikamaru' => '95']</p>
+                    <p>"PREDEFINED" meaning the built in functions of PHP</p>
+                    <span>String Manipulation, Number Manipulation, and Date Manipulation</span>
+                    <p><span>Scenario:</span> An array with names with their final grade, and has to determine the highest grade for them to win a random item!</p>
+                    <p>$studs = [<br>'Lelouch' => '95',<br> 'Ayanokoji' => '99',<br> 'Zenitsu' => '84',<br> 'Light' => '93',<br> 'Shikamaru' => '95'<br>]</p>
                 </div>
             </div>
             <!-- TODO create a way to show each box -->
@@ -30,7 +31,14 @@ navHeader($navList);
                     $funcName = $boxData[4]["funcName"];
                     $num = 0;
                     ob_start();
-                    capitalizeFLetter($arrayStuds);
+                    $highGrade = max($studs);
+                        foreach ($studs as $name => $grade){
+                            if ($highGrade == $grade){
+                            $topStud = strtoupper($name);
+                            break; 
+                            }
+                        }
+                        echo "Congratulations: " . $topStud . "!!";
                     $outputHtml = ob_get_clean();
                     include __DIR__ . '/../../components/templates/codeBox.component.php';
                 ?>
@@ -43,24 +51,32 @@ navHeader($navList);
                     include __DIR__ . '/../../components/templates/textBox.component.php';
                     $snippet = $boxData[5]["snippet"];
                     $funcName = $boxData[5]["funcName"];
-                    $num = 0;
+                    $num = 1;
                     ob_start();
-                    capitalizeFLetter($arrayStuds);
+                    $highGrade = max($studs);
+                        foreach ($studs as $name => $grade){
+                            if ($highGrade == $grade){
+                                echo "$name has the highest grade of $grade";
+                            }
+                        }
                     $outputHtml = ob_get_clean();
                     include __DIR__ . '/../../components/templates/codeBox.component.php';
                 ?>
             </div>
             <div class="box"> 
                 <?php
-                    $title = $boxData[4]["title"];
-                    $description = $boxData[4]["description"];
-                    $scenario = $boxData[4]["scenario"];
+                    $title = $boxData[6]["title"];
+                    $description = $boxData[6]["description"];
+                    $scenario = $boxData[6]["scenario"];
                     include __DIR__ . '/../../components/templates/textBox.component.php';
-                    $snippet = $boxData[4]["snippet"];
-                    $funcName = $boxData[4]["funcName"];
-                    $num = 0;
+                    $snippet = $boxData[6]["snippet"];
+                    $funcName = $boxData[6]["funcName"];
+                    $num = 2;
                     ob_start();
-                    capitalizeFLetter($arrayStuds);
+                    $prize = getRandId(0,2);
+                    echo "Student: " . $topStud . "<br>";
+                    echo "You won {$prizes[$prize]}<br>";
+                    echo date("F j, Y g:i A") . "<br>";
                     $outputHtml = ob_get_clean();
                     include __DIR__ . '/../../components/templates/codeBox.component.php';
                 ?>
