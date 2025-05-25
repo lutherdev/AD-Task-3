@@ -22,12 +22,12 @@ navHeader($navList);
             </div>
             <div class="box"> 
                 <?php
-                    $title = $boxData[4]["title"];
-                    $description = $boxData[4]["description"];
-                    $scenario = $boxData[4]["scenario"];
+                    $title = $boxData[5]["title"];
+                    $description = $boxData[5]["description"];
+                    $scenario = $boxData[5]["scenario"];
                     include __DIR__ . '/../../components/templates/textBox.component.php';
-                    $snippet = $boxData[4]["snippet"];
-                    $funcName = $boxData[4]["funcName"];
+                    $snippet = $boxData[5]["snippet"];
+                    $funcName = $boxData[5]["funcName"];
                     $num = 0;
                     ob_start();
                     $highGrade = max($studs);
@@ -44,12 +44,12 @@ navHeader($navList);
             </div>
             <div class="box"> 
                 <?php
-                    $title = $boxData[5]["title"];
-                    $description = $boxData[5]["description"];
-                    $scenario = $boxData[5]["scenario"];
+                    $title = $boxData[6]["title"];
+                    $description = $boxData[6]["description"];
+                    $scenario = $boxData[6]["scenario"];
                     include __DIR__ . '/../../components/templates/textBox.component.php';
-                    $snippet = $boxData[5]["snippet"];
-                    $funcName = $boxData[5]["funcName"];
+                    $snippet = $boxData[6]["snippet"];
+                    $funcName = $boxData[6]["funcName"];
                     $num = 1;
                     ob_start();
                     $highGrade = max($studs);
@@ -64,12 +64,12 @@ navHeader($navList);
             </div>
             <div class="box"> 
                 <?php
-                    $title = $boxData[6]["title"];
-                    $description = $boxData[6]["description"];
-                    $scenario = $boxData[6]["scenario"];
+                    $title = $boxData[7]["title"];
+                    $description = $boxData[7]["description"];
+                    $scenario = $boxData[7]["scenario"];
                     include __DIR__ . '/../../components/templates/textBox.component.php';
-                    $snippet = $boxData[6]["snippet"];
-                    $funcName = $boxData[6]["funcName"];
+                    $snippet = $boxData[7]["snippet"];
+                    $funcName = $boxData[7]["funcName"];
                     $num = 2;
                     ob_start();
                     $prize = getRandId(0,2);
