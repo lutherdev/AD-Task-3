@@ -7,7 +7,7 @@ require_once __DIR__ . '/../../components/nav.component.php';
 ?>
 
 <?php
-head("LEVEL 3", "tutorial3");
+head("THE BEGINNING", "congrats");
 navHeader($navList);
 ?>
         <div id="main">
