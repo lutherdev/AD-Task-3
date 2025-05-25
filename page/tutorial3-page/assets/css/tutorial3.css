@@ -106,6 +106,7 @@ body {
     padding: 5%;
     border: 1px solid black;
     border-radius: 10px;
+    min-width: 40%;
 }
 
 button{
