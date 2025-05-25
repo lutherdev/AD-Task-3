@@ -70,7 +70,7 @@ $boxData = [
     [
         "title" => "String Function",
         "description" => 'A built in function for tampering with your strings',
-        "scenario" => "Scenario: Capitalize the name of TOP STUDENT! (using strtoupper)",
+        "scenario" => "use case: Capitalize the name of TOP STUDENT! [using strtoupper]",
         "snippet" => '$highGrade = max($studs);<br>
                         foreach ($studs as $name => $grade){<br>
                             if ($highGrade == $grade){<br>
@@ -85,7 +85,7 @@ $boxData = [
     [
         "title" => "Mathematical Function",
         "description" => 'A built in function for tampering with your numbers',
-        "scenario" => "Scenario: Get the highest grade out of all students (using max)",
+        "scenario" => "use case: Get the highest grade out of all students [using max]",
         "snippet" => '$highGrade = max($studs);<br>
                         foreach ($studs as $name => $grade){<br>
                             if ($highGrade == $grade){<br>
@@ -97,9 +97,10 @@ $boxData = [
     [
         "title" => "Date Manipulation",
         "description" => 'A built in function for tampering with your numbers',
-        "scenario" => "Scenario: Get the latest date and time for when the student won the prize",
+        "scenario" => "use case: Get the latest date and time for when the student won the prize [using date()]",
         "snippet" => '$prize = getRandId(0,3);<br>
-                    echo "You won {$prizes[$prize]};"
+                    echo "Student: " . $topStud;<br>
+                    echo "You won {$prizes[$prize]};"<br>
                     echo date("F j, Y g:i A");',
         "funcName" => "showOutputBox2",
     ],
