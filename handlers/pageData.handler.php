@@ -15,6 +15,7 @@ $navList = [
 $arrayStuds = ["Luther sambeli", "Ford Dean", "dean man", "lelouch britania"];
 
 $boxData = [
+    //TUTORIAL PAGE
     [
         "title" => "DECLARATION",
         "description" => "To declare a variable in PHP we use the syntax",
@@ -51,6 +52,7 @@ $boxData = [
         "funcName" => "showOutputBox2",
 
     ],
+    //TUTORIAL PAGE 2
     [
         "title" => "FUNCTION",
         "description" => "You can think of functions like a tv remote, where each click of the button it does the expected thing you want",
@@ -62,6 +64,14 @@ $boxData = [
                     ',
         "funcName" => "showOutputBox0",
 
+    ],
+    //TUTORIAL PAGE 3
+    [
+        "title" => "String Manipulation",
+        "description" => 'A built in function for tampering with your strings',
+        "scenario" => "Capitalize the name of the winner!",
+        "snippet" => "strtoupper(\$winner)",
+        "funcName" => "showOutputBox0",
     ],
 ]
 
