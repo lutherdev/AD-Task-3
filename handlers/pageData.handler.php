@@ -66,9 +66,23 @@ $boxData = [
         "funcName" => "showOutputBox0",
 
     ],
+    [
+        "title" => "ARRAYS",
+        "description" => 'A data type (compound) where it can consists of variety data type',
+        "scenario" => "Scenario: Get the names from a group (array) and make a new dictionary (associative array) and assign a default money per person",
+        "snippet" => '$arrayStuds = ["Luther sambeli", "Ford Dean", "dean man", "lelouch britania"];<br>
+                    $newStud = [];
+                    foreach($arrayStuds as $itStud){<br>
+                        $newStud[$itStuds] = 300;<br>
+                    }<br>
+                    foreach ($newStuds as $itStud => $money){<br>
+                        echo "User: $itStud, Balance: $money"<br>;
+                    }<br>',
+        "funcName" => "showOutputBox1",
+    ],
     //TUTORIAL PAGE 3
     [
-        "title" => "String Function",
+        "title" => "STRING FUNCTION",
         "description" => 'A built in function for tampering with your strings',
         "scenario" => "use case: Capitalize the name of TOP STUDENT! [using strtoupper]",
         "snippet" => '$highGrade = max($studs);<br>
@@ -83,7 +97,7 @@ $boxData = [
         "funcName" => "showOutputBox0",
     ],
     [
-        "title" => "Mathematical Function",
+        "title" => "MATHEMATICAL FUNCTION",
         "description" => 'A built in function for tampering with your numbers',
         "scenario" => "use case: Get the highest grade out of all students [using max]",
         "snippet" => '$highGrade = max($studs);<br>
@@ -95,7 +109,7 @@ $boxData = [
         "funcName" => "showOutputBox1",
     ],
     [
-        "title" => "Date Manipulation",
+        "title" => "DATE MANIPULATION",
         "description" => 'A built in function for tampering with your numbers',
         "scenario" => "use case: Get the latest date and time for when the student won the prize [using date()]",
         "snippet" => '$prize = getRandId(0,3);<br>
@@ -104,6 +118,7 @@ $boxData = [
                     echo date("F j, Y g:i A");',
         "funcName" => "showOutputBox2",
     ],
+
 ]
 
 ?>
