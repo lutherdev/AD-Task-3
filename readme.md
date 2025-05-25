@@ -21,9 +21,9 @@
 <!-- TODO: Change the zyx-0314 into your github username  -->
 <!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 
-![](https://visit-counter.vercel.app/counter.png?page=lutherdev/AD-Task-2)
+![](https://visit-counter.vercel.app/counter.png?page=lutherdev/AD-Task-3)
 
-[![wakatime](https://wakatime.com/badge/user/07922ef3-1982-4f9d-9785-e4224b8b3d43/project/4164fde5-f44c-496e-9412-7900f16f60f4.svg)](https://wakatime.com/badge/user/07922ef3-1982-4f9d-9785-e4224b8b3d43/project/4164fde5-f44c-496e-9412-7900f16f60f4)
+[![wakatime](https://wakatime.com/badge/user/07922ef3-1982-4f9d-9785-e4224b8b3d43/project/a57ff610-b71a-440d-8bae-5282633b0ada.svg)](https://wakatime.com/badge/user/07922ef3-1982-4f9d-9785-e4224b8b3d43/project/a57ff610-b71a-440d-8bae-5282633b0ada)
 
 ---
 
@@ -72,6 +72,7 @@ A website that shows the basics of PHP
 - Looping
 - Conditional Statement
 - Functions
+- Predefined Functions
 
 ### Technology
 
@@ -135,5 +136,5 @@ AD-ProjectName
 
 | Title        | Purpose                                                                       | Link          |
 | ------------ | ----------------------------------------------------------------------------- | ------------- |
-| ChatGPT      | For handlers, components, composer                                            | chatgpt.com |
+| ChatGPT      | Explained predefined functions                                            | chatgpt.com |
 
