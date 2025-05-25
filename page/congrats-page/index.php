@@ -15,6 +15,7 @@ navHeader($navList);
                 <div id="hero-text">
                     <h1>CONGRATULATIONS PROGRAMMER!</h1>
                     <p><span>YOU</span> now know the basics of PHP! <br> #GetCertifiedPHP</p>
+                    <h4>THIS IS JUST THE BEGINNING</h4>
                 </div>
             </div>
             <div class ="pageButton">
