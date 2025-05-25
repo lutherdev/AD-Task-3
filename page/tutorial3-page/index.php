@@ -14,13 +14,12 @@ navHeader($navList);
             <div class="box">
                 <div id="hero-text">
                     <h1>PREDEFINED FUNCTIONS!</h1>
-                    <p>"PREDEFINED" meaning the built in functions of PHP</p>
-                    <span>String Manipulation, Number Manipulation, and Date Manipulation</span>
+                    <p><span>"PREDEFINED"</span> meaning the built in functions of PHP</p>
                     <p><span>Scenario:</span> An array with names with their final grade, and has to determine the highest grade for them to win a random item!</p>
+                    <p><span>code declare:</span></p>
                     <p>$studs = [<br>'Lelouch' => '95',<br> 'Ayanokoji' => '99',<br> 'Zenitsu' => '84',<br> 'Light' => '93',<br> 'Shikamaru' => '95'<br>]</p>
                 </div>
             </div>
-            <!-- TODO create a way to show each box -->
             <div class="box"> 
                 <?php
                     $title = $boxData[4]["title"];
