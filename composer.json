@@ -1,9 +1,9 @@
 {
-    "name": "luther/ad-task-2",
+    "name": "luther/ad-task-3",
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Luther\\AdTask2\\": "src/"
+            "Luther\\AdTask3\\": "src/"
         }
     },
     "authors": [
